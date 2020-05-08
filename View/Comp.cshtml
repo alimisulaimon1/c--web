@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Compare Two Squre Root Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">welcome</h1>
+    
+</div>
+@{
+    
+    
+          <p>@ViewBag.Result</p>
+
+
+
+        <p>@ViewBag.ErrorMessage</p>
+    
+  
+    
+
+
+}
+
+<div>
+    <form asp-controller="Comp" asp-action="Comp" method="POST">
+        <input type="number" placeholder="First Number" name="firstNumber" required />
+        <input type="number" placeholder="Second Number" name="secondNumber" required />
+        <button type="submit">submit</button>
+    </form>
+
+
+</div>
